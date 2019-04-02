@@ -1,14 +1,18 @@
 Rails.application.routes.draw do
 
+# resources :tasks
  # lire toutes les taches
   get "tasks" => "tasks#index"
+
+    # add a tache
+  get 'tasks/new' => 'tasks#new', as: :new_task
+  post 'tasks', to: 'tasks#create'
+
 
   # lire une tache
   get "tasks/:id" => 'tasks#show', as: :task
 
-  # add a tache
-  get 'tasks/new' => 'tasks#new', as: :new_task
-  post 'tasks', to: 'tasks#create'
+
 
 
   # update a tache
