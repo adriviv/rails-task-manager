@@ -2,6 +2,9 @@
 # The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
 #
 # Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+
+Task.create([{ name: 'laundry', details: 'make it fast', completed: false }
+Task.create([{ name: 'code', details: 'active record', completed: false }
+Task.create([{ name: 'running', details: 'Marathon', completed: false }
+
+
